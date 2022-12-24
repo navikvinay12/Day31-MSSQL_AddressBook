@@ -31,3 +31,9 @@ update AddressBook set firstName='Vijayendra' where firstName='vicky';
 
 --UC5 Ability to delete a person using persons name
 delete AddressBook where firstName='Vijayendra';
+
+--UC6 Ability to Retrieve person belonging to a city or state from the addressBook
+select * from AddressBook where state='Goa';
+select * from AddressBook where city='Bhubaneswar';
+select * from AddressBook where city='Gangtok' or state='Odisha';
+
