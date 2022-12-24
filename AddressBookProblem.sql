@@ -43,3 +43,13 @@ select count(*) as size from AddressBook where State='Meghalaya';
 
 --UC8 Ability to retrieve entries sorted alphabetically by Persons name for a given city--
 select * from AddressBook order by firstName;
+
+--UC9 Ability to identify each Address Book with name and Type (Alter to add name and type)--
+--Here the type could be Family,Friends,Profession,etc .
+--Alter Address Book to add name and type .
+alter table AddressBook add contactType varchar(200);
+update AddressBook set contactType='Friends';
+update AddressBook set contactType='Family' where firstName='Vijaya' ;
+update AddressBook set contactType='Family' where firstName='Vishal' ;
+update AddressBook set contactType='Doctor' where firstName='Raj' ;
+update AddressBook set contactType='BankManager' where firstName='Sanjay' ;
