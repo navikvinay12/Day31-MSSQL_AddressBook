@@ -53,3 +53,9 @@ update AddressBook set contactType='Family' where firstName='Vijaya' ;
 update AddressBook set contactType='Family' where firstName='Vishal' ;
 update AddressBook set contactType='Doctor' where firstName='Raj' ;
 update AddressBook set contactType='BankManager' where firstName='Sanjay' ;
+
+--UC10 Ability to get number of contact persons i.e count by type 
+select contactType,
+count(*) as 'total'
+FROM AddressBook group by contactType ;
+select count(contactType) from AddressBook;
