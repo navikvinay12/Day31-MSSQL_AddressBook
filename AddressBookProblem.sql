@@ -37,3 +37,6 @@ select * from AddressBook where state='Goa';
 select * from AddressBook where city='Bhubaneswar';
 select * from AddressBook where city='Gangtok' or state='Odisha';
 
+--UC7 Ability to understand the size of address book by city and state.
+select count(*) as size from AddressBook where city='Shillong';
+select count(*) as size from AddressBook where State='Meghalaya';
