@@ -28,3 +28,6 @@ insert into AddressBook values('Vijaya','laxmi','Umiam Lake','Shillong','Meghala
 
 --UC4 Ability to edit existing contact person using their name
 update AddressBook set firstName='Vijayendra' where firstName='vicky';
+
+--UC5 Ability to delete a person using persons name
+delete AddressBook where firstName='Vijayendra';
