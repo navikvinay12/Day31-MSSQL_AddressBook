@@ -25,3 +25,6 @@ insert into AddressBook values('Sanjay','Thakkur','Nepali','Gangtok','Sikkim',70
 insert into AddressBook values('Akshay','jadhav','Oriya','Bhubaneswar','Odisha',600095,9117465741,'Akshayjadhav@gmail.com');
 insert into AddressBook values('Vishal','pal','Umiam Lake','Shillong','Meghalaya',800011,8887465777,'Vishalpal@gmail.com');
 insert into AddressBook values('Vijaya','laxmi','Umiam Lake','Shillong','Meghalaya',800011,8887465777,'Vijayalaxmi@gmail.com');
+
+--UC4 Ability to edit existing contact person using their name
+update AddressBook set firstName='Vijayendra' where firstName='vicky';
